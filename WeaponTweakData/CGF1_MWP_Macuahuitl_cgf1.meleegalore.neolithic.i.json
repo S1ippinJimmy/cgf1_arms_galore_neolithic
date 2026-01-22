@@ -1,0 +1,11 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Macuahuitl",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.286836922,
+  "Rotation": 45.0,
+  "BladeStart": 0.129666016,
+  "BladeEnd": 0.825147331,
+  "MeleeWeaponType": 2
+}

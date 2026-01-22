@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_BigStick</defName>
+		<label>big stick</label>
+		<description>Also known as a twig or a branch (sometimes size dependent), these are plant stems that grow off of other stems, with the function of supporting leaves, flowers, and fruits, and performing many other essential aspects of plant biology. The term "stick" usually refers to the remains of the stem that have been disconnected from the plant. Sticks are commonly used as tools not only by humans, but also by primates, birds, and other animals. They can also be used as improvised weapons, and have been since the dawn of human history./n/This stick is especially big. As Theodore Roosevelt once said, "speak softly and carry a big stick; you will go far."</description>
+		<graphicData>
+			<texPath>CGF1/Melee/BigStick</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements/>
+		</recipeMaker>
+		<costList>
+			<WoodLog>5</WoodLog>
+		</costList>
+		<relicChance>0.001</relicChance>
+		<statBases>
+			<WorkToMake>250</WorkToMake>
+			<Mass>1.55</Mass>
+			<DeteriorationRate>2</DeteriorationRate>
+		</statBases>
+		<equippedAngleOffset>10</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Tribal_Penitent</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+			<li>CGF1_Weapon_Ideology_Tribal_Miner</li>
+			<li>CGF1_Weapon_Ideology_Tribal_Logger</li>
+			<li>CGF1_Weapon_Ideology_Tribal_Farmer</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
+		</tradeTags>
+		<tools>
+			  <li>
+				<label>stick</label>
+				<capacities>
+				  <li>Blunt</li>
+				  <li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.5</cooldownTime>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

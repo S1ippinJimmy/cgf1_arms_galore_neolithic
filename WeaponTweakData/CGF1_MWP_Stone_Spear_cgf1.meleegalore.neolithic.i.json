@@ -1,0 +1,12 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Stone_Spear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "Rotation": 45.0,
+  "ScaleX": 1.15,
+  "ScaleY": 1.15,
+  "BladeStart": 0.4361493,
+  "BladeEnd": 0.711198449,
+  "MeleeWeaponType": 4
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Jade_Knife</defName>
+		<label>jade knife</label>
+		<description>A conspicuous knife made out of jade and wood. While the handle seems to be crudely made, the jade blade itself is precision-cut. Those who look at the blade too long claim it has a sinister quality to it. But that's just superstition, right?</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Jade_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker Inherit="False"/>
+		<relicChance>0.01</relicChance>
+		<costList>
+			<Jade>40</Jade>
+		</costList>
+		<smeltable>false</smeltable>
+		<statBases>
+			<MarketValue>160</MarketValue>
+			<Mass>0.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Tribal_Warrior</li>
+			<li>CGF1_Weapon_Tribal_ChiefMelee</li>
+			<li>CGF1_Weapon_Horax_Highthrall</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			  <li>
+				<label>Blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+		</tools>
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+	</ThingDef>
+	
+</Defs>

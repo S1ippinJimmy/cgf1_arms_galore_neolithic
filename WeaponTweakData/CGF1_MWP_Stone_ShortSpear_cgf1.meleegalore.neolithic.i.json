@@ -1,0 +1,12 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Stone_ShortSpear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.1611002,
+  "ScaleX": 1.1,
+  "ScaleY": 1.1,
+  "BladeStart": 0.491159141,
+  "BladeEnd": 0.69548136,
+  "MeleeWeaponType": 4
+}

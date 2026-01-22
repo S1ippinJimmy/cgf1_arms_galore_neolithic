@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Macuahuitl</defName>
+		<label>macuahuitl</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Macuahuitl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<relicChance>0.25</relicChance>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>1.4</Mass>
+		</statBases>
+		<equippedAngleOffset>-25</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicMeleeDecent</li>
+			
+			<li>CGF1_Weapon_Tribal_Warrior</li>
+			<li>CGF1_Weapon_Tribal_Berseker</li>
+			<li>CGF1_Weapon_Tribal_ChiefMelee</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			  <li>
+				<label>head</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2.15</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

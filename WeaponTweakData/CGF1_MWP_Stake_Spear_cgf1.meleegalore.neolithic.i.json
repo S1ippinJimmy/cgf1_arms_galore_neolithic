@@ -1,0 +1,12 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Stake_Spear",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.211624444,
+  "OffY": -0.002980626,
+  "Rotation": 45.0,
+  "BladeStart": 0.55737704,
+  "BladeEnd": 0.8614009,
+  "MeleeWeaponType": 4
+}

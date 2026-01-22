@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Rock</defName>
+		<label>rock</label>
+		<description>A naturally occurring aggregate of mineral matter. Rocks can be found almost anywhere on most terrestrial bodies in space. This one is small enough to fit in the human hand and can be used as a crude bludgeoning weapon. Rocks were likely among the first weapons used by humans to kill other humans besides the human body itself, and they will likely be among the last to do so as well.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Rock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.98</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements/>
+		</recipeMaker>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>CGF1_StuffCategory_Stony_NJ</li>
+		</stuffCategories>
+		<relicChance>0.001</relicChance>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<Mass>1</Mass>
+			<DeteriorationRate>0.10</DeteriorationRate>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">	
+			<li>CGF1_Weapon_Tribal_Penitent</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
+		</tradeTags>
+		<tools>
+			  <li>
+				<label>rock</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.75</cooldownTime>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

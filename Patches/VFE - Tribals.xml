@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Tribals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Light_Macuahuitl" or
+					defName="CGF1_MWP_Macuahuitl" or
+					defName="CGF1_MWP_Primitive_Club" or
+					defName="CGF1_MWP_Quauhololli" or
+					defName="CGF1_MWP_Stake" or
+					defName="CGF1_MWP_Stake_Spear" or
+					defName="CGF1_MWP_Stone_Axe" or
+					defName="CGF1_MWP_Stone_Knife" or
+					defName="CGF1_MWP_Stone_ShortSpear" or
+					defName="CGF1_MWP_Stone_Shortsword" or
+					defName="CGF1_MWP_Stone_Spear"
+					]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>VFET_Weapons</researchPrerequisite>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Primitive_Bow_" or
+					defName="CGF1_MWP_Primitive_RecurveBow_"
+					]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>VFET_Bow</researchPrerequisite>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[
+					defName="CGF1_MWP_Primitive_Flamebow_" or
+					defName="CGF1_MWP_Primitive_Boombow_"
+					]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>VFET_Culture</researchPrerequisite>
+					</value>
+				</li>		
+				
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

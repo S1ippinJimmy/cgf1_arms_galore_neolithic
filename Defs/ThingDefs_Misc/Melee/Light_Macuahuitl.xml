@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon_Quality">
+		<defName>CGF1_MWP_Light_Macuahuitl</defName>
+		<label>light macuahuitl</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Light_Macuahuitl</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<WoodLog>15</WoodLog>
+		</costList>
+		<costStuffCount>15</costStuffCount>
+		<stuffCategories>
+			<li>Stony</li>
+			<li>Woody</li>
+			<!--<li>Metallic</li>-->
+		</stuffCategories>
+		<relicChance>0.25</relicChance>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicMeleeDecent</li>
+			
+			<li>CGF1_Weapon_Tribal_Warrior</li>
+			<li>CGF1_Weapon_Tribal_Berseker</li>
+			<li>CGF1_Weapon_Tribal_ChiefMelee</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			  <li>
+				<label>head</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+				<armorPenetration>0.15</armorPenetration>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

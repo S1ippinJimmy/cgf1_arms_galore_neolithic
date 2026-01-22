@@ -1,0 +1,14 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Quauhololli",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.223968565,
+  "OffY": 0.0196463652,
+  "ScaleX": 0.95,
+  "ScaleY": 0.95,
+  "HandsMode": 1,
+  "BladeStart": 0.200392932,
+  "BladeEnd": 0.6797643,
+  "MeleeWeaponType": 8
+}

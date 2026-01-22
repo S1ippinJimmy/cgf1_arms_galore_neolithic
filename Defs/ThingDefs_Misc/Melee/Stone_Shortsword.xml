@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Stone_Shortsword</defName>
+		<label>stone shortsword</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Stone_Shortsword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<techLevel>Neolithic</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements/>
+		</recipeMaker>
+		<costStuffCount>20</costStuffCount>
+		<stuffCategories>
+			<li>CGF1_StuffCategory_Stony_NJ</li>
+		</stuffCategories>
+		<relicChance>0.1</relicChance>
+		<statBases>
+			<WorkToMake>1500</WorkToMake>
+			<Mass>1</Mass>
+		</statBases>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>NeolithicMeleeBasic</li>
+			
+			<li>CGF1_Weapon_Tribal_Warrior</li>
+			<li>CGF1_Weapon_Impid_Warrior</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>WeaponMelee</li>
+			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			  <li>
+				<label>Blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

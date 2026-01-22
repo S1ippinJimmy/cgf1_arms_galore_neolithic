@@ -1,0 +1,12 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Primitive_Club",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.330849469,
+  "OffY": 0.0268256329,
+  "HandsMode": 1,
+  "BladeStart": 0.169895679,
+  "BladeEnd": 0.813710868,
+  "MeleeWeaponType": 8
+}

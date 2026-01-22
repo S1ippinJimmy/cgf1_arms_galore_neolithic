@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged_Throwing">
+		<defName>CGF1_MWP_ThrowingStones_</defName>
+		<label>throwing stones</label>
+		<description>A naturally occurring aggregate of mineral matter. Rocks can be found almost anywhere on most terrestrial bodies in space. These rocks are small enough to fit in the human hand and can be used as crude throwing weapons. Rocks were likely among the first weapons used by humans to kill other humans besides the human body itself, and they will likely be among the last to do so as well.</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/ThrowingStones</texPath>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<soundInteract>ThrowGrenade</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite/>
+			<skillRequirements/>
+		</recipeMaker>
+		<costStuffCount>5</costStuffCount>
+		<stuffCategories>
+			<li>CGF1_StuffCategory_Stony_NJ</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToMake>400</WorkToMake>
+			<Mass>1</Mass>
+			<AccuracyTouch>0.7</AccuracyTouch>
+			<AccuracyShort>0.5</AccuracyShort>
+			<AccuracyMedium>0.4</AccuracyMedium>
+			<AccuracyLong>0.2</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+		</statBases>
+		<relicChance>0.0</relicChance>
+		<techLevel>Neolithic</techLevel>
+		<weaponTags>		
+			<li>CGF1_Weapon_Pirate_Drifter</li>
+			<li>CGF1_Weapon_Tribal_Archer</li>
+			<li>CGF1_Weapon_Tribal_Penitent</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_Royalty_Refugee</li>
+			<li>CGF1_Weapon_Ideology_Beggar</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Neolithic</li>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Neolithic_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Projectile_ThrowingStone</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>15.9</range>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stone</label>
+				<capacities>
+				  <li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<possessionCount>1</possessionCount> <!-- Possession -->
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Projectile_ThrowingStone</defName>
+		<label>thrown stone</label>
+		<graphicData>
+			<texPath>CGF1/Melee/Rock</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>CGF1_MWP_DamageDef_BluntProjectile</damageDef>
+			<damageAmountBase>7</damageAmountBase>
+			<spinRate>0.8</spinRate>
+			<speed>27</speed>
+			<armorPenetrationBase>0.0</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+</Defs>

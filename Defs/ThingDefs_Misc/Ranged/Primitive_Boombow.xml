@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged">
+		<defName>CGF1_MWP_Primitive_Boombow_</defName>
+		<label>primitive boombow</label>
+		<description>A special type of selfbow made out of extremely primitive materials, the so-called "boombow" is a very low tech explosive ranged weapon. It is paired with arrows infused with a special chemfuel mixture which create small explosions on impact. The accuracy of such weapons is poor and the construction is lacking given that it is built using minimal tools, but even primitive explosives are still explosives and should be treated with caution. Boombows are well-liked by tribes of Impids and can frequently be found in their hands - other tribes are less inclined to craft them due to their inherent danger.</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Primitive_Boombow</texPath>
+			<drawSize>0.92</drawSize>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<researchPrerequisite/>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<WoodLog>25</WoodLog>
+			<Chemfuel>50</Chemfuel>
+		</costList>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<MarketValue>80</MarketValue>
+			<Mass>0.7</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="False">		
+			<li>NeolithicRangedFlame</li>
+			<li>CGF1_Weapon_Impid_Archer</li>
+			<li>CGF1_Weapon_Impid_Hunter</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Neolithic_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Arrow_Primitive_Boom</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<forcedMissRadius>0.9</forcedMissRadius>
+				<range>20.9</range>
+				<soundCast>Bow_Small</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<rotateInShelves>false</rotateInShelves>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+		<generateCommonality>0.20</generateCommonality> <!-- Common -->
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Arrow_Primitive_Boom</defName>
+		<label>primitive boombow arrow</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>CGF1/Projectile/Arrow_Boom</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>1.00</explosionRadius>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>35</speed>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+</Defs>

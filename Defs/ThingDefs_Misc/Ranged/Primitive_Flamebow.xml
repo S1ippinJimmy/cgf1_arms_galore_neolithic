@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseHumanMakeableRanged">
+		<defName>CGF1_MWP_Primitive_Flamebow_</defName>
+		<label>primitive flamebow</label>
+		<description>...</description>
+		<graphicData>
+			<texPath>CGF1/Ranged/Primitive_Flamebow</texPath>
+			<drawSize>0.92</drawSize>
+		</graphicData>
+		<soundInteract>Bow_Recurve</soundInteract>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+				<li>ElectricSmithy</li>
+				<li>FueledSmithy</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+			<researchPrerequisite/>
+			<displayPriority>531</displayPriority>
+		</recipeMaker>
+		<techLevel>Neolithic</techLevel>
+		<costList>
+			<WoodLog>25</WoodLog>
+			<Chemfuel>20</Chemfuel>
+		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MarketValue>45</MarketValue>
+			<Mass>0.7</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags Inherit="False">		
+			<li>NeolithicRangedFlame</li>
+			<li>CGF1_Weapon_Impid_Archer</li>
+			<li>CGF1_Weapon_Impid_Hunter</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+			<li>Neolithic</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_ArmsGalore_Neolithic_Ranged</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Arrow_Primitive_Flame</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<range>20.9</range>
+				<soundCast>Bow_Small</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>limb</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<rotateInShelves>false</rotateInShelves>
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardCommonSuper</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseProjectileNeolithic">
+		<defName>CGF1_MWP_Arrow_Primitive_Flame</defName>
+		<label>primitive flamebow arrow</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>CGF1/Projectile/Arrow_Flame</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>0.66</explosionRadius>
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>38</speed>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+			<explosionChanceToStartFire>1.0</explosionChanceToStartFire>
+		</projectile>
+	</ThingDef>
+
+</Defs>

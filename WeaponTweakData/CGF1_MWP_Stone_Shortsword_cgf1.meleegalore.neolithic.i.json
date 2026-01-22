@@ -1,0 +1,13 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Stone_Shortsword",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.2475442,
+  "ScaleX": 0.9,
+  "ScaleY": 0.9,
+  "HandsMode": 1,
+  "BladeStart": 0.09430256,
+  "BladeEnd": 0.6444008,
+  "MeleeWeaponType": 48
+}

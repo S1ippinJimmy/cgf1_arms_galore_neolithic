@@ -1,0 +1,19 @@
+{
+  "TextureModID": "cgf1.meleegalore.neolithic.i",
+  "ItemDefName": "CGF1_MWP_Jade_Knife",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.121807463,
+  "ScaleX": 1.05,
+  "ScaleY": 1.05,
+  "HandsMode": 1,
+  "BladeStart": 0.113948919,
+  "BladeEnd": 0.487229854,
+  "MeleeWeaponType": 48,
+  "TrailTint": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 0.0
+  }
+}
