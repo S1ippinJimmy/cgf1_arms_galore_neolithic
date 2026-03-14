@@ -45,8 +45,7 @@
 			<li>Melee</li>
 			<li>MeleeBlunt</li>
 		</weaponClasses>
-		<tradeTags>
-			<li>WeaponMelee</li>
+		<tradeTags Inherit="False">
 			<li>CGF1_ArmsGalore_Neolithic_Melee</li>
 		</tradeTags>
 		<tools>
